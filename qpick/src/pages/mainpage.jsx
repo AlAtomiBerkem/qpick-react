@@ -1,13 +1,14 @@
 import React from "react";
+import Styles from "./main-page.module.css"
 
-export const  MainPage = () => {
-    
-
+function MainPage () {
     return(
-        <>
-            <h1>Это моя главная страница тут будут карточки товаров</h1>
-        </>
+         <div className={Styles.conteiner}>
+           <div className={Styles.cardConteiner}>
+            adfafdf
+           </div>
+        </div>
     )
 }
 
-export default MainPage();
+export default MainPage;

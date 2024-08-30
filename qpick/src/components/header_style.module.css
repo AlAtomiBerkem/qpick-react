@@ -1,4 +1,4 @@
-.conteiner {
+.container {
     display: grid;
     place-items: center;
 }
@@ -6,29 +6,47 @@
 .headerBlock {
     width: 1110px;
     height: 60px;
-    background-color:#EAEAEA;
+    background-color: #EAEAEA;
     align-items: center;
     padding-left: 10px;
-    display:flex;
-    justify-content: space-between; 
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .BrandName {
-
-display: grid;
-width: 85px;
-height: 30px;
-
-font-weight: bold;
-font-size: 25px;
+    display: grid;
+    width: 85px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.headerIcons svg {
-    margin-left: 10px; 
-    padding-right: 10px;
+.headerIcons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.headerIcons svg:first-child {
-    margin-left: 0; 
+.iconWrapper {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+.counter {
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #FFA542;
+    color: #fff;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 22px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    text-align: center;
 }

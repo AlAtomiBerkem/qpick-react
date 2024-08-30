@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {Header}
-      {MainPage}
+      <Header/>
+      <MainPage/>
       {Footer}
     </div>
   );
