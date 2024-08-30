@@ -1,0 +1,34 @@
+.conteiner {
+    display: grid;
+    place-items: center;
+}
+
+.headerBlock {
+    width: 1110px;
+    height: 60px;
+    background-color:#EAEAEA;
+    align-items: center;
+    padding-left: 10px;
+    display:flex;
+    justify-content: space-between; 
+
+}
+
+.BrandName {
+
+display: grid;
+width: 85px;
+height: 30px;
+
+font-weight: bold;
+font-size: 25px;
+}
+
+.headerIcons svg {
+    margin-left: 10px; 
+    padding-right: 10px;
+}
+
+.headerIcons svg:first-child {
+    margin-left: 0; 
+}
