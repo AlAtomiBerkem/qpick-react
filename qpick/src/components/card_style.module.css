@@ -1,0 +1,67 @@
+
+.grid_item {
+    background-color: #fff;
+    height:  407px;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.grid_item:hover {
+  box-shadow: 6px 10px 12px rgba(255, 102, 51, 0.2);
+}
+
+
+.grid_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.grid_item img {
+  width: 100%;
+  max-width: 170px; /* Ограничиваем максимальную ширину изображения */
+  margin-bottom: 20px;
+}
+
+.grid_item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  
+}
+
+.grid_item .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f39c12; /* Или другой подходящий цвет */
+  margin-bottom: 15px;
+}
+
+.grid_item .rating {
+  display: flex;
+  
+}
+
+.grid_item .rating span {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #ffc107; /* Цвет звезд */
+}
+
+.grid_item .buy {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.card_top{
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; 
+}

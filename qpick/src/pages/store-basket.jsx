@@ -1,17 +1,37 @@
 import React from "react";
 import Header from "../components/header";
-import { Footer } from "../components/footer";
+import Footer from "../components/footer";
 
-export const StoreBasket = () => {
+import Style from "./storeBascket_page.module.css"
+
+import imageSrc3 from '../assets/cardimage/headphonesline.png';
+
+
+function StoreBasket () {
 
 
     return (
         <>
-        {Header}
-        <p> тут будет находиться карзина с товарами </p>
-        {Footer}
+        <Header/>
+        <div className={Style.conteiner}>
+            <div className={Style.content}>
+
+
+            <div className={Style.grid_item}>
+            <div className={Style.card_body}>
+          <img src={imageSrc3} alt="Apple EarPods"/>
+            <h3>Apple EarPods</h3>
+          <p className={Style.price}>2327 Р</p>
+        </div>
+        </div>
+
+
+        
+        </div>
+            </div>
+        <Footer/>
         </>
     )
 }
 
-export default StoreBasket();
+export default StoreBasket;
