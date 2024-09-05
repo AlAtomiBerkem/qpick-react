@@ -32,10 +32,18 @@ footer {
 nav ul {
     list-style: none;
     display: flex;
+
 }
 
 nav li {
     margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 
 .language {
@@ -44,6 +52,11 @@ nav li {
 
 .language a {
     margin-right: 10px;
+
+    text-decoration: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
 }
 
 .social svg {
