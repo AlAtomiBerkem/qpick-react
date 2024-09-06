@@ -36,8 +36,8 @@ function Footer() {
             </defs>
             </svg>
 
-            <a href="/">Рус</a>
-            <a href="/">Eng</a>
+            <Link to="/">Рус</Link>
+            <Link to="/">Eng</Link>
           </div>
           <div className={styles.spacer}></div>
           <div className={styles.social}>

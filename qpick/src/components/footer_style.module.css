@@ -44,6 +44,10 @@ ul li a {
     outline: none;
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease;
+}
+ul li a:hover {
+    color: #ffc107;
 }
 
 .language {
@@ -57,6 +61,7 @@ ul li a {
     outline: none;
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease;
 }
 
 .social svg {
