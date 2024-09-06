@@ -1,15 +1,20 @@
 import React from 'react';
-import MainPage from './pages/mainpage';
-import Storebasket from './pages/store-basket';
-// import NotFound from './pages/notFound';
-import 'normalize.css';
+import Mainpage from './pages/Mainpage.jsx'
+import StoreBasket from './pages/StoreBasket.jsx'
+import NotFound from './pages/NotFound.jsx';
 
+import { Routes, Route} from 'react-router-dom';
+import 'normalize.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <MainPage/>
+      <Routes>
+        <Route path='/' element={<Mainpage/>}/>
+        <Route path='/bascket' element={<StoreBasket/>}/>
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
     </div>
   );
 }

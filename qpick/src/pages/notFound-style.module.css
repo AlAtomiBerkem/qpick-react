@@ -1,0 +1,16 @@
+.image {
+    padding: 50px 50px 50px 50px;
+display: block;
+}
+
+.NotFound_title {
+
+    text-align: center;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    padding-bottom: 70px;
+
+    font-size: 40px;
+    font-weight: bold; 
+
+}

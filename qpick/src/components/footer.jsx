@@ -1,12 +1,16 @@
 import React from 'react';
 import styles from "./footer_style.module.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className={styles.content}>
       <footer className={styles.footer}>
         <div className={styles.container}>
+          
+          <Link to="/" className={styles.link}>
           <div className={styles.logo}>QРІСК</div>
+          </Link>
           <div className={styles.spacer}></div>
           <nav>
             <ul>
@@ -32,8 +36,8 @@ function Footer() {
             </defs>
             </svg>
 
-            <a href="/">Рус</a>
-            <a href="/">Eng</a>
+            <Link to="/">Рус</Link>
+            <Link to="/">Eng</Link>
           </div>
           <div className={styles.spacer}></div>
           <div className={styles.social}>

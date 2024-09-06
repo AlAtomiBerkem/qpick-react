@@ -1,22 +1,20 @@
-
 .grid_item {
-    background-color: #fff;
-    height:  407px;
-    width: 350px;
-    border-radius: 30px;
+  background-color: #fff;
+  height:  407px;
+  width: 350px;
+  border-radius: 30px;
 }
 
 .grid_item:hover {
-  box-shadow: 6px 10px 12px rgba(255, 102, 51, 0.2);
+box-shadow: 6px 10px 12px rgba(186, 183, 182, 0.369);
 }
 
-
 .grid_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  padding: 20px;
-  box-sizing: border-box;
+display: grid;
+flex-direction: column;
+align-items: center; 
+padding: 20px;
+box-sizing: border-box;
 
 }
 
@@ -51,17 +49,33 @@
 }
 
 .grid_item .buy {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+background-color: #fff;
   border: none;
   cursor: pointer;
+  color: 000000;
+  font-size: 17px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+
 }
 
+.buy:hover {
+  color:#ffc107;
+}
 
 .card_top{
   flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
   position: relative;
   overflow: hidden; 
+  height: 206px;
+  width: 310px;
+}
+
+
+.card_body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Создаем 2 колонки одинаковой ширины */
+  grid-template-rows: repeat(1, 1fr); /* Создаем 2 строки одинаковой высоты */
+  gap: 20px;
+  
 }

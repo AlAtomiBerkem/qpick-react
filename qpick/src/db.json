@@ -7,37 +7,37 @@
 },
 
 {
-    "img": "./assets/cardimage/Image-3.png",
-    "title": "Apple BYX S852I",
-    "price": 2970,
-    "rate": 4.7
+    "img": "./assets/cardimage/pods3.png.png",
+    "title": "Apple EarPods N345s",
+    "price": 2327,
+    "rate": 4.5
+},
+
+{
+    "img": "./assets/cardimage/airpods2.png.png",
+    "title": "Apple CollPads",
+    "price": 6909,
+    "rate": 4.1
+},
+
+{
+    "img": "./assets/cardimage/Image-3.png.png",
+    "title": "Apple SuperSonik",
+    "price": 2213,
+    "rate": 4.3
+},
+
+{
+    "img": "./assets/cardimage/pods3.png.png",
+    "title": "Apple Still 666SEF",
+    "price": 5540,
+    "rate": 1.7
 },
 
 {
     "img": "./assets/cardimage/Image-3.png",
-    "title": "Apple BYX S852I",
-    "price": 2970,
-    "rate": 4.7
-},
-
-{
-    "img": "./assets/cardimage/Image-3.png",
-    "title": "Apple BYX S852I",
-    "price": 2970,
-    "rate": 4.7
-},
-
-{
-    "img": "./assets/cardimage/Image-3.png",
-    "title": "Apple BYX S852I",
-    "price": 2970,
-    "rate": 4.7
-},
-
-{
-    "img": "./assets/cardimage/Image-3.png",
-    "title": "Apple BYX S852I",
-    "price": 2970,
-    "rate": 4.7
+    "title": "Apple Lalalend",
+    "price": 1375,
+    "rate": 3.7
 }
 ]
