@@ -68,3 +68,16 @@ ul li a {
 .spacer {
     flex: 1; /* Заполнитель для равномерного распределения */
 }
+
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    outline: none; 
+  }
+  
+.link:hover,
+.link:focus {
+    text-decoration: none; 
+    outline: none;
+  }

@@ -21,6 +21,8 @@
     font-size: 25px;
 }
 
+
+
 .headerIcons {
     display: flex;
     align-items: center;
@@ -50,3 +52,15 @@
     right: -1px;
     text-align: center;
 }
+
+.link {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет текста от родительского элемента */
+    outline: none; /* Убирает синюю подсветку при фокусе */
+  }
+  
+.link:hover,
+.link:focus {
+    text-decoration: none; /* Убирает подчеркивание при наведении и фокусе */
+    outline: none; /* Убирает синюю подсветку при фокусе */
+  }

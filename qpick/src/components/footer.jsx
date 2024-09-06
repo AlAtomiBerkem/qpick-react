@@ -1,12 +1,16 @@
 import React from 'react';
 import styles from "./footer_style.module.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <div className={styles.content}>
       <footer className={styles.footer}>
         <div className={styles.container}>
+          
+          <Link to="/" className={styles.link}>
           <div className={styles.logo}>QРІСК</div>
+          </Link>
           <div className={styles.spacer}></div>
           <nav>
             <ul>
