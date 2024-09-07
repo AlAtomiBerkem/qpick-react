@@ -19,7 +19,7 @@ function MainPage() {
             <Cards
               key={i}
               title={obj.title}
-              image={obj.img}
+              image={obj.image}
               rating={obj.rate}
               price={obj.price}
             />

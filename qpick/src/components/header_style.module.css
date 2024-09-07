@@ -54,13 +54,13 @@
 }
 
 .link {
-    text-decoration: none; /* Убирает подчеркивание */
-    color: inherit; /* Наследует цвет текста от родительского элемента */
-    outline: none; /* Убирает синюю подсветку при фокусе */
+    text-decoration: none; 
+    color: inherit; 
+    outline: none; 
   }
   
 .link:hover,
 .link:focus {
-    text-decoration: none; /* Убирает подчеркивание при наведении и фокусе */
-    outline: none; /* Убирает синюю подсветку при фокусе */
+    text-decoration: none; 
+    outline: none; 
   }
