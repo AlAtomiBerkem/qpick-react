@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from './main_page.module.css';
+import Styles from './styles/main_page.module.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Cards from '../components/Cards';

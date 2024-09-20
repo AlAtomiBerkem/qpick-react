@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Style from './storeBascket_page.module.css';
+import Style from './styles/storeBascket_page.module.css';
 import imageSrc3 from '../assets/cardimage/headphonesline.png';
 import { Link } from 'react-router-dom';
 function StoreBasket() {
