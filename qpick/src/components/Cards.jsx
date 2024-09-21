@@ -1,11 +1,14 @@
 import React from 'react';
 import styles from './card_style.module.css'; // Use lowercase "s" for consistency
+// import img from '../assets/cardimage/Image-3.png'
 
-function Cards({ image, title, price, rating }) {
+function Cards({img, alt, title, price, rating }) {
   return (
     <div className={styles.grid_item}>
       <div className={styles.card_top}>
-        <img src={image} alt="Apple EarPods" />
+         <img 
+         src={img} 
+         alt={alt}/>
       </div>
       <div className={styles.card_body}>
         <h3>{title}</h3>

@@ -1,25 +1,32 @@
 import React from 'react';
-import Styles from './main_page.module.css';
+import Styles from './styles/main_page.module.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Cards from '../components/Cards';
 
-import items from '../db.json';
-import wireless from '../wirelessDB.json';
+import {data} from '../db';
+import {data2} from '../wirelessDB';
 
 function MainPage() {
-  console.log(items);
+
+  const [item, setItem] = React.useState(0)
+
+  const setItemClick = () => {
+    item += 1
+  }
+
   return (
     <>
-      <Header />
+      <Header  itemcount={item} setItem={setItemClick}/>
       <div className={Styles.conteiner}>
         <div className={Styles.sortname1}>Наушники</div>
         <div className={Styles.cardConteiner}>
-          {items.map((obj, i) => (
-            <Cards
+          {data.map((obj, i) => (
+            <Cards 
               key={i}
               title={obj.title}
-              image={obj.image}
+              img={obj.img}
+              alt={obj.alt}
               rating={obj.rate}
               price={obj.price}
             />
@@ -27,11 +34,12 @@ function MainPage() {
         </div>
         <div className={Styles.sortname2}>Беспроводные наушники</div>
         <div className={Styles.wireless_headphones}>
-          {wireless.map((obj, i) => (
+          {data2.map((obj, i) => (
             <Cards
               key={i}
               title={obj.title}
-              image={obj.img}
+              img={obj.img}
+              alt={obj.alt}
               rating={obj.rate}
               price={obj.price}
             />
