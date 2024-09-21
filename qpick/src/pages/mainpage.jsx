@@ -8,15 +8,21 @@ import {data} from '../db';
 import {data2} from '../wirelessDB';
 
 function MainPage() {
-  console.log(data);
+
+  const [item, setItem] = React.useState(0)
+
+  const setItemClick = () => {
+    item += 1
+  }
+
   return (
     <>
-      <Header />
+      <Header  itemcount={item} setItem={setItemClick}/>
       <div className={Styles.conteiner}>
         <div className={Styles.sortname1}>Наушники</div>
         <div className={Styles.cardConteiner}>
           {data.map((obj, i) => (
-            <Cards
+            <Cards 
               key={i}
               title={obj.title}
               img={obj.img}
