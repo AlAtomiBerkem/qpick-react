@@ -1,8 +1,7 @@
-// pages/MainPage.js
 import React from 'react';
 import Styles from './styles/main_page.module.css';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/header'
+import Footer from '../components/footer.jsx';
 import Cards from '../components/Cards';
 import { data } from '../db';
 import { data2 } from '../wirelessDB';

@@ -1,4 +1,3 @@
-// components/Header.js
 import React from 'react';
 import styles from './header_style.module.css';
 import { Link } from 'react-router-dom';

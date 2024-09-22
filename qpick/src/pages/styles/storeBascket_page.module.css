@@ -23,7 +23,7 @@
 .grid_item {
     margin-top: 30px;
     background-color: #fff;
-    max-height:  218px;
+    max-height:  280px;
     max-width: 633px;
     border-radius: 30px;
 }
@@ -135,3 +135,26 @@
     text-decoration: none;
   }
   
+
+  .minus {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    padding-top: 156px;
+
+    right: 1280px;
+  }
+
+  .plus {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    padding-top: 156px;
+    right: 1190px;
+  }
+
+  .counter {
+    position: block;
+    padding-top: 156px;
+    right: 100px;
+  }

@@ -3,12 +3,14 @@ import React from 'react';
 import styles from './card_style.module.css';
 import { useDispatch } from 'react-redux';
 import { incrementItemCount } from '../redux/cardSlice.js';
+import { addItem } from '../redux/basketSlice.js'
 
 function Cards({ img, alt, title, price, rating }) {
   const dispatch = useDispatch();
 
   const handleBuyClick = () => {
     dispatch(incrementItemCount());
+    dispatch(addItem({ img, alt, title, price, rating }));
   };
 
   return (

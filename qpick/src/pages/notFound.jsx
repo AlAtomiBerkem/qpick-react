@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/header.jsx"
+import Footer from "../components/footer.jsx"
 import Style from "./styles/notFound-style.module.css"
 import photo from "../assets/empty-cart.png"
 
