@@ -22,4 +22,5 @@ function Cards({img, alt, title, price, rating }) {
   );
 }
 
+
 export default Cards;
