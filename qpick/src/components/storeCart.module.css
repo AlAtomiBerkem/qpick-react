@@ -1,0 +1,51 @@
+.items {
+    display: block;
+}
+
+.grid_item {
+    margin-top: 30px;
+    background-color: #fff;
+    max-height:  218px;
+    max-width: 633px;
+    border-radius: 30px;
+}
+
+
+.grid_item img {
+    width: 100%;
+    max-width: 146px;
+    margin-left: 15px;
+  }
+  
+  .grid_item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .grid_item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  .grid_item .rating {
+    display: flex;
+    
+  }
+  
+  .grid_item .rating span {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #ffc107;
+  }
+  
+  .grid_item .buy {
+  background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: 000000;
+    font-size: 17px;
+    font-weight: bold;
+  }

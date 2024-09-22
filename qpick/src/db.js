@@ -5,6 +5,7 @@ import Image2 from "./assets/cardimage/pods3.png"
 
 export const data = [
 {
+    "id": '1',
     "img": Image3,
     "alt": "alt1",
     "title": "Apple BYX S852I",
@@ -13,6 +14,7 @@ export const data = [
 },
 
 {
+    "id": '2',
     "img": Image2,
     "alt": "alt2",
     "title": "Apple EarPods N345s",
@@ -21,6 +23,7 @@ export const data = [
 },
 
 {
+    "id": 3,
     "img": Image1,
     "alt": "alt3",
     "title": "Apple CollPads",
@@ -29,6 +32,7 @@ export const data = [
 },
 
 {
+    "id": 4,
     "img": Image3,
     "alt": "alt4",
     "title": "Apple SuperSonik",
@@ -37,6 +41,7 @@ export const data = [
 },
 
 {
+    "id": '5',
     "img": Image2,
     "alt": "alt5",
     "title": "Apple Still 666SEF",
@@ -45,6 +50,7 @@ export const data = [
 },
 
 {
+    "id": '6',
     "img": Image1,
     "alt": "alt6",
     "title": "Apple Lalalend",

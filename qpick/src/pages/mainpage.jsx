@@ -1,28 +1,20 @@
 import React from 'react';
 import Styles from './styles/main_page.module.css';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/header'
+import Footer from '../components/footer.jsx';
 import Cards from '../components/Cards';
-
-import {data} from '../db';
-import {data2} from '../wirelessDB';
+import { data } from '../db';
+import { data2 } from '../wirelessDB';
 
 function MainPage() {
-
-  const [item, setItem] = React.useState(0)
-
-  const setItemClick = () => {
-    item += 1
-  }
-
   return (
     <>
-      <Header  itemcount={item} setItem={setItemClick}/>
+      <Header />
       <div className={Styles.conteiner}>
         <div className={Styles.sortname1}>Наушники</div>
         <div className={Styles.cardConteiner}>
           {data.map((obj, i) => (
-            <Cards 
+            <Cards
               key={i}
               title={obj.title}
               img={obj.img}
