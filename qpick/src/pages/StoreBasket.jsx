@@ -6,7 +6,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import minusIcon from '../assets/minus.svg'
 import plusIcon from '../assets/plus.svg'
-import { incrementItemQuantity, decrementItemQuantity } from '../redux/basketSlice';
+import deleteIcon from '../assets/Vector.svg'
+import { incrementItemQuantity, decrementItemQuantity, removeItem } from '../redux/basketSlice';
 
 function StoreBasket() {
   const items = useSelector((state) => state.basket.items);
@@ -27,7 +28,8 @@ function StoreBasket() {
 
                   <img className={Style.plus} src={plusIcon} onClick={() => dispatch(incrementItemQuantity(item.id))} alt='plus'/>
                   <p className={Style.price}>{item.price * item.quantity} Р</p>
-                  <img className={Style.minus} src={minusIcon}  onClick={() => dispatch(decrementItemQuantity(item.id))} alt='minus'/>
+                  <img className={Style.minus} src={minusIcon} onClick={() => dispatch(decrementItemQuantity(item.id))} alt='minus'/>
+                  <img className={Style.delete} src={deleteIcon} onClick={() => dispatch(removeItem(item.id))} alt='delete'/>
                 </div>
               </div>
             ))}
