@@ -5,7 +5,7 @@ import Image1 from "./assets/cardimage/airpods2.png"
 
 export const data2 = [
 {
-    "id": 7,
+    
     "img": Image3,
     "alt": "alt7",
     "title": "Apple BYX S852I",
@@ -14,7 +14,7 @@ export const data2 = [
 },
 
 {
-    "id": 8,
+    
     "img": Image2,
     "alt": "alt8",
     "title": "Apple EarPods N345s",
@@ -23,7 +23,7 @@ export const data2 = [
 },
 
 {
-    "id": 9,
+   
     "img": Image1,
     "alt": "alt9",
     "title": "Apple CollPads",
