@@ -1,7 +1,7 @@
 import React from 'react';
 import MainPage from './pages/mainpage.jsx'
 import StoreBasket from './pages/StoreBasket.jsx'
-import NotFound from './pages/NotFound.jsx';
+// import NotFound from './pages/NotFound.jsx';
 
 import { Routes, Route} from 'react-router-dom';
 
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage/>}/>
         <Route path='/bascket' element={<StoreBasket/>}/>
-        <Route path='*' element={<NotFound/>}/>
+        // <Route path='*' element={<NotFound/>}/>
       </Routes>
     </div>
   );
