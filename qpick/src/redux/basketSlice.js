@@ -13,6 +13,7 @@ const basketSlice = createSlice({
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
       }
+      console.log('Item added:', action.payload);
     },
     incrementItemQuantity: (state, action) => {
       const item = state.items.find(item => item.id === action.payload);

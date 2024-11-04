@@ -13,26 +13,32 @@ function StoreBasket() {
   const items = useSelector((state) => state.basket.items);
   const dispatch = useDispatch();
 
+  console.log('Rendering StoreBasket with items:', items);
+
   return (
     <>
       <Header />
       <div className={Style.conteiner}>
         <div className={Style.content}>
           <div className={Style.items}>
-            {items.map((item, index) => (
-              <div key={index} className={Style.grid_item}>
-                <div className={Style.card_body}>
-                  <img src={item.img} alt={item.alt} />
-                  <h3>{item.title}</h3>
-                  <div className={Style.counter}>{item.quantity}</div>
+            {items.length > 0 ? (
+              items.map((item) => (
+                <div key={item.id} className={Style.grid_item}>
+                  <div className={Style.card_body}>
+                    <img src={item.img} alt={item.alt} />
+                    <h3>{item.title}</h3>
+                    <div className={Style.counter}>{item.quantity}</div>
 
-                  <img className={Style.plus} src={plusIcon} onClick={() => dispatch(incrementItemQuantity(item.id))} alt='plus'/>
-                  <p className={Style.price}>{item.price * item.quantity} Р</p>
-                  <img className={Style.minus} src={minusIcon} onClick={() => dispatch(decrementItemQuantity(item.id))} alt='minus'/>
-                  <img className={Style.delete} src={deleteIcon} onClick={() => dispatch(removeItem(item.id))} alt='delete'/>
+                    <img className={Style.plus} src={plusIcon} onClick={() => dispatch(incrementItemQuantity(item.id))} alt='plus'/>
+                    <p className={Style.price}>{item.price * item.quantity} Р</p>
+                    <img className={Style.minus} src={minusIcon} onClick={() => dispatch(decrementItemQuantity(item.id))} alt='minus'/>
+                    <img className={Style.delete} src={deleteIcon} onClick={() => dispatch(removeItem(item.id))} alt='delete'/>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p>Корзина пуста</p>
+            )}
           </div>
           <div className={Style.cart__checkout}>
             <div className={Style.final_price}>
